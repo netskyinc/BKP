@@ -1,0 +1,390 @@
+@media screen and (max-width: 999px){
+  .logoB {
+    margin-top: 0;
+    padding-top: 120px;
+    img{
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  .web{
+    display: none;
+  }
+  .mob{
+    display: block;
+    .mobMenu {
+      position: fixed;
+      display: block;
+      height: 55px;
+      background: #333;
+      width: 100%;
+      z-index: 999;
+      .logo {
+        position: absolute;
+        left: 15px;
+        top: 5px;
+      }
+      .contactBtn {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+      }
+    }
+    .contactsMap {
+      background: none;
+      width: 100%;
+      height: 272px;
+      margin-top: 10px;
+      margin-left: 0;
+      position: relative;
+      padding: 30px;
+      .preTitle {
+        width: 66%;
+        margin-left: -30%;
+      }
+    }
+    .hamburger:focus, .hamburger:hover {
+      opacity: 1;
+    }
+    .mobNav {
+      position: fixed;
+      top: 55px;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+      background: #000000db;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      &.active{
+       visibility: visible;
+       transition-delay:0s;
+       opacity:1;
+      }
+    }
+    .mainMenuMob {
+      margin-top: 30px;
+      margin-bottom: 50px;
+      .menuItem {
+        display: block;
+        max-width: 100%;
+        margin: 10px;
+        a{
+          .navy{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Gilroy;
+          }
+          color: #fff;
+          &:hover{
+            color: #F9CB00;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+    .contactInfo {
+      font-family: Gilroy;
+      font-weight: bold;
+      margin-top: -10px;
+      margin-left: 0;
+
+      .geo, .contacts {
+        display: block;
+        font-size: 21px;
+        max-width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .geo {
+        &:before {
+          content: '';
+          @include retina('/img/ico/geo.png', 2, contain, center center no-repeat);
+          width: 20px;
+          height: 25px;
+          position: absolute;
+          margin-left: -30px;
+        }
+      }
+
+      .contacts {
+        font-size: 20px;
+
+        .phone {
+          margin-top: 15px;
+          a {
+            color: #fff;
+
+            &:hover {
+              text-decoration: none;
+              color: $cy;
+            }
+          }
+
+          &:before {
+            content: '';
+            @include retina('/img/ico/phone.png', 2, contain, center center no-repeat);
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 4px;
+          }
+        }
+
+        .mail {
+          margin-top: 15px;
+          a {
+            color: #fff;
+
+            &:hover {
+              text-decoration: none;
+              color: $cy;
+            }
+          }
+
+          &:before {
+            content: '';
+            @include retina('/img/ico/mail.png', 2, contain, center center no-repeat);
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            margin-left: -25px;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .mob{
+    display: none;
+  }
+  .web{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 27px;
+    line-height: 30px;
+    &.left{
+      &:after{
+        margin-top: 37px;
+      }
+    }
+    &.center{
+      &:after{
+        margin-top: 37px;
+      }
+    }
+    &.special{
+      font-size: 27px;
+      line-height: 30px;
+      margin-bottom: 60px;
+      padding-left: 30px;
+      &:before{
+        height: 100px;
+        margin-left: -20%;
+      }
+      &:after{
+        margin-top: -70px;
+        height: 120px;
+        left: 0;
+      }
+    }
+  }
+  .mainInfo{
+    font-size: 18px;
+  }
+  .mainInfo div h1 {
+    font-size: 25px;
+  }
+  section#black {
+    display: none;
+  }
+  section#commercial {
+    padding-top: 10px;
+    background-position: bottom;
+    p {
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .card {
+      margin-left: -15px;
+      padding: 10px;
+      margin-bottom: 50px;
+      width: 92vw;
+      .cardForm {
+        padding: 20px;
+        .formTitle {
+          font-size: 20px;
+        }
+      }
+      &.fm1 .formInfo{
+        margin-left: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+      }
+      &.fm2 .formInfo {
+        margin-left: 5px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+      }
+      &.fm3 .formInfo textarea {
+        min-height: 150px;
+        border: 1px solid #333;
+      }
+    }
+  }
+  section#experience{
+    .gallery-slider {
+      margin-top: 80px;
+      .slick-arrow {
+        left: auto;
+        top: auto;
+        height: 30px;
+        display: block;
+        width: 100%;
+        &.slick-prev{
+          margin-top: -40px;
+        }
+      }
+      .gallery-slider__thumbnails {
+        margin-bottom: 80px;
+        .sliderItems span {
+          font-size: 27px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+    .formFeedback {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }
+  section#purchase {
+    padding-top: 0;
+    padding-bottom: 0;
+     .quatro {
+      border: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .useBKP {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  section#team {
+    padding-top: 40px;
+    .teamCards .teamCard {
+      padding: 20px 15px;
+      .cardHead .cardImg {
+        width: 33%;
+      }
+      .cardHead .cardMore {
+        width: 65%;
+        padding-left: 10px;
+      }
+    }
+    .working {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      .card{
+        padding: 10px;
+        .cardForm {
+          padding: 20px;
+        }
+      }
+
+    }
+  }
+  section#working{
+    .fancyName {
+      padding-top: 15px;
+    }
+    .fancyFirm {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+  }
+  section#price {
+    .priceCards .priceList .priceCard {
+      box-shadow: 0px 0px 15px rgba(180, 180, 180, 0.66);
+      margin-bottom: 30px;
+    }
+    .priceSend .formFeedback {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  .mobR {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .footerBtn {
+    margin-top: 20px;
+    .btn {
+      float: none;
+      margin-left: auto;
+      display: block;
+      margin-right: auto;
+    }
+  }
+  footer .footer .container:before {
+    width: 100%;
+    height: 100%;
+  }
+  .logoMob {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .logoB {
+    img{
+      max-width: 260px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+  section#head .web{
+    nav a {
+      font-size: 12px;
+    }
+    .contactInfo {
+      font-size: 13px;
+      .contacts {
+        font-size: 15px;
+      }
+    }
+  }
+  .web{
+   .mainMenu {
+      font-size: 12px!important;
+    }
+  }
+
+}
